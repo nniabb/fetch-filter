@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input {
+            width: 300px;
+            margin: 5px 0 10px 0;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        table{
+            width: 50%;
+        }
+        table, th, td {
+          border: 1px solid black;
+          padding: 5px;
+        }
+        th {
+          background-color: rgb(181, 181, 218);
+          cursor: pointer;
+        }
+        td{
+          background-color: rgb(216, 197, 197);
+        }
+      </style>
+</head>
+<body>
+    <input type="text" placeholder="search" id="inp"/>
+    <table id="productTable">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th id="title">Title</th>
+          <th id="price">Price</th>
+          <th>Category</th>
+          <th>Created At</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody"></tbody>
+    
+      <script src="main.js"></script>
+    </body>
+</html>
